@@ -17,7 +17,7 @@ public class ConnectServiceImpl implements ConnectService {
   public void connectTest() {
     // connect to me
     try {
-      InetAddress address = InetAddress.getByName("196.239.29.173");
+      InetAddress address = InetAddress.getByName("197.16.136.239");
       boolean isReachable = address.isReachable(10000);
 
       log.debug("reached host {}", isReachable);

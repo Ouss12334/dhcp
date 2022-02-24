@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/dhcp.iml" filepath="$PROJECT_DIR$/.idea/dhcp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dhcp-server/dhcp-server.iml" filepath="$PROJECT_DIR$/dhcp-server/dhcp-server.iml" />
     </modules>
   </component>
 </project>

@@ -11,7 +11,6 @@
 	<groupId>com</groupId>
 	<artifactId>dhcp-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dhcp-server</name>
 
 	<properties>
 		<java.version>11</java.version>

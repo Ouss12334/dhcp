@@ -15,17 +15,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class UDPServer implements Runnable {
 
-  public static final int SERVER_PORT = 888;
   public DatagramSocket socket;
-  public byte[] buffer = new byte[2000];
-
-  public UDPServer() throws SocketException {
-  }
 
   public void run() {
     try {
       Scanner scanner = new Scanner(System.in);
-      if (scanner.hasNext()) {
+      while (scanner.hasNext()) {
         String line = scanner.nextLine();
 
         socket = new DatagramSocket();
@@ -33,12 +28,18 @@ public class UDPServer implements Runnable {
         log.debug("sending message");
         socket.send(
             new DatagramPacket(
-                line.getBytes(StandardCharsets.UTF_8),
+                line.trim().getBytes(StandardCharsets.UTF_8),
                 line.length(),
                 InetAddress.getLocalHost(),
                 777
             )
         );
+
+        // close server and trim to clear spaces
+        if ("end".equalsIgnoreCase(line.trim())) {
+          log.debug("closing server");
+          System.exit(0);
+        }
       }
     } catch (IOException e) {
       log.debug("can't read");

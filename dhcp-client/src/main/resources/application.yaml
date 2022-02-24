@@ -7,4 +7,4 @@ logging:
     com.dhcp: debug
 
 server:
-  port: 8081
+  port: 8080

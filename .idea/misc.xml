@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/dhcp-server/pom.xml" />
+        <option value="$PROJECT_DIR$/dhcp-client/pom.xml" />
       </list>
     </option>
   </component>

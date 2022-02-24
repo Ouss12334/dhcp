@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com</groupId>
-	<artifactId>maps</artifactId>
+	<artifactId>dhcp-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>maps</name>
+	<name>dhcp-server</name>
 	<description>Demo project for maps</description>
 	<properties>
 		<java.version>11</java.version>

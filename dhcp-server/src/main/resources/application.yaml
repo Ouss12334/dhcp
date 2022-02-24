@@ -1,3 +1,10 @@
 spring:
   application:
     name: dhcp-server
+
+logging:
+  level:
+    com.dhcp: debug
+
+server:
+  port: 8080
